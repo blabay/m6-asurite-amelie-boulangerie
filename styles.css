@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     font-family: "Verdana", "Arial", "sans-serif";
     line-height: 1.5;
@@ -24,6 +73,11 @@ h1 {
     margin: 0;
     padding-top: 50px;
     padding-left: 32px;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+
 }
 
 div#grid-container {
@@ -36,8 +90,10 @@ div#grid-container {
 }
 
 nav {
-    width: 150px;
+    width: 110px;
     margin-top: 16px;
+    padding-inline-start: 40px;
+    line-height: 1;
 }
 
 nav li {
@@ -52,6 +108,7 @@ nav a {
     background-color: #e0e5de;
     color: #141a1a;
     text-decoration: none;
+    font-family: Arial, Verdana, sans-serif;
     font-weight: bold;
 }
 
@@ -59,9 +116,18 @@ nav a:hover, .active{
     background-color: #f28095;
 }
 
+h2 {
+    font-family: Arial, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    margin-block-end: 13.28px;
+    margin-block-start: 13.28px;
+}
+
 main {
     color: #543c1b;
     padding-bottom: 16px;
+    font-size: 14px;
 }
 main img {
     float: left;
@@ -70,6 +136,10 @@ main img {
 main p, main ul {
     display: inline-block;
     width: 50%;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
+    margin-inline-start: 32px;
+    margin-left: 32px;
 }
 
 main p {
@@ -78,16 +148,26 @@ main p {
 
 main ul {
     margin-left: 16px;
+    padding-left: 40px;
+    list-style-type: disc;
 }
 
 address {
     clear: both;
     padding-top: 16px;
+    font-style: italic;
 }
 
 footer {
+    font-family: Arial, Verdana, sans-serif;
     font-style: italic;
     text-align: center;
     background-color: #afaeb4;
     padding: 8px 0;
+    display: block;
+    height: 48px;
+}
+
+footer p {
+    margin-top: 18px;
 }
