@@ -45,7 +45,7 @@ nav li {
     text-align: center;
 }
 
-nav ul li a {
+nav a {
     display:block;
     padding: 16px;
     margin: 8px auto;
@@ -55,7 +55,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav a:first-child, nav a:hover{
+nav a:hover, .active{
     background-color: #f28095;
 }
 
